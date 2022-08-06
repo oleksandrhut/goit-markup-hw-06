@@ -61,7 +61,7 @@
                                 Имя
                             </label>
                             <div class="modal-form-field">
-                                <input type="name" id="client_name">
+                                <input class="form-input" type="name" id="client_name" name="client-name">
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                     <use href="./images/icons.svg#icon-person"></use>
                             </div>
@@ -71,7 +71,7 @@
                             </label>
                             <div class="modal-form-field">
                                 <input type="tel" id="client_tel">
-                                <svg class="modal-form-icon" width="18px" height="18px">
+                                <svg class="modal-form-icon" width="18px" height="18px" name="client-tel">
                                     <use href="./images/icons.svg#icon-phone"></use>
                             </div>
                             
@@ -79,7 +79,7 @@
                                 Почта
                             </label>
                              <div class="modal-form-field">
-                                <input type="mail" id="client_mail">
+                                <input type="mail" id="client_mail" name="client-mail">
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                         <use href="./images/icons.svg#icon-email"></use>
                                 
@@ -88,14 +88,21 @@
                             <label for="comment-area">
                                 Комментарий
                             </label>
-                            <textarea name="" id="" class="comment-area" placeholder="Введите текст"></textarea>
-                            <label>
-                                <input type="checkbox" name="hobby" value="music"/>
-                                Соглашаюсь с рассылкой и принимаю <a href="" class="modal-check-decoration">Условия договора</a>
-                            </label>
-                            <button type="button" class="hero-button modal-button">
+                            <textarea name="" id="comment-area" class="comment-area" placeholder="Введите текст"></textarea>
+                                
+                            <div class="modal-form-chekbox">
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="contract" value="contract">
+                                    <span class="check-icon"></span>
+                                    Соглашаюсь с рассылкой и принимаю
+                                </label>
+                                <a href="" class="modal-check-decoration">Условия договора</a>
+                            </div>
+                    
+                            <button type="submit" class="hero-button modal-button">
                                 <span>Отправить</span>
                             </button>
+                    </div>
                         </form>
 
                     </div>
