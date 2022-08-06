@@ -57,46 +57,52 @@
                         </button>
                         <p class="modal-description">Оставьте свои данные, мы вам перезвоним</p>
                         <form class="modal-form">
-                            <label for="client_name">
-                                Имя
-                            </label>
+                            
                             <div class="modal-form-field">
-                                <input class="form-input" type="name" id="client_name" name="client-name">
+                                <label for="client_name">
+                                    Имя
+                                </label>
+                                <input class="form-input" type="name" id="client_name" name="client-name" required>
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                     <use href="./images/icons.svg#icon-person"></use>
                             </div>
                         
-                            <label for="client_tel">
-                                Телефон
-                            </label>
+                           
                             <div class="modal-form-field">
-                                <input type="tel" id="client_tel">
+                                <label for="client_tel">
+                                    Телефон
+                                </label>
+                                <input type="tel" id="client_tel" required>
                                 <svg class="modal-form-icon" width="18px" height="18px" name="client-tel">
                                     <use href="./images/icons.svg#icon-phone"></use>
                             </div>
                             
-                            <label for="client_mail">
-                                Почта
-                            </label>
+                            
                              <div class="modal-form-field">
-                                <input type="mail" id="client_mail" name="client-mail">
+                                <label for="client_mail">
+                                    Почта
+                                </label>
+                                <input type="mail" id="client_mail" name="client-mail" required>
                                 <svg class="modal-form-icon" width="18px" height="18px">
                                         <use href="./images/icons.svg#icon-email"></use>
                                 
                             </div>
                             
-                            <label for="comment-area">
-                                Комментарий
-                            </label>
-                            <textarea name="" id="comment-area" class="comment-area" placeholder="Введите текст"></textarea>
-                                
+                            <div class="modal-form-field">
+                                <label for="comment-area">
+                                    Комментарий
+                                </label>
+                                <textarea name="" id="comment-area" class="comment-area" placeholder="Введите текст"></textarea>
+                                    
+                            </div>
                             <div class="modal-form-chekbox">
                                 <label>
-                                    <input class="checkbox" type="checkbox" name="contract" value="contract">
+                                    <input class="checkbox" type="checkbox" name="contract" value="contract" required>
                                     <span class="check-icon"></span>
-                                    Соглашаюсь с рассылкой и принимаю
+                                    <span class="modal-contract-description">Соглашаюсь с рассылкой и принимаю</span>
+                                    <a href="" class="modal-check-decoration">Условия договора</a>
                                 </label>
-                                <a href="" class="modal-check-decoration">Условия договора</a>
+                                
                             </div>
                     
                             <button type="submit" class="hero-button modal-button">
